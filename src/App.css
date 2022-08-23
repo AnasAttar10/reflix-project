@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,125 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* public things  */
+*{
+  /* font-family: 'Cinzel Decorative', cursive; */
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
 }
+body{
+  background-color: rgb(27, 22, 22);
+  color: white;
+}
+/* Navbar */
+.nav{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: rgb(244, 69, 69);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.links{
+  text-align: left;
+}
+.nav .links a{
+  padding: 5px;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+}
+.nav .links a:hover{
+  color: red;
+  background-color: white;
+}
+/* Landing  */
+.users-conatiner{
+  display: flex;
+  justify-content: space-between;
+}
+.user{
+  width: 24%;
+  margin: 20px 0 ;
+  height: 100px;
+  line-height: 100px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.subtitle-landing{
+  text-align: center;
+}
+.user a{
+  text-decoration: none;
+  color: white;
+}
+.blue{
+  background-color: blue;
+}
+.green{
+  background-color: rgb(37, 154, 37);
+}
+.red{
+  background-color: red;
+}
+.orange{
+  background-color: orange;
+}
+/* End Landing */
+
+/* Movie */
+.Catalog-container{
+  margin:50px 0 ;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+#search{
+  width: 80%;
+  padding: 10px;
+  margin: 10px auto;
+  border: 2px solid blue;
+}
+.movie{
+  height: 250px;
+  position: relative;
+}
+.movie img{
+  width: 100%;
+  height: 100%;
+}
+.btnAddRemove{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: block;
+  color: white;
+  background-color: gray;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  border-radius: 60%;
+  cursor: pointer;
+}
+/* End Movie */
+
+/* Movie Detail */
+.movie-detail{
+  margin: 50px 0;
+}
+.img-container{
+  width: 30%;
+  margin: 10px auto;
+}
+.img-container img{
+  width: 100%;
+  height: 65VH;
+}
+.movie-description{
+  width: 90%;
+  margin: auto;
+}
+/* End Movie Detail */
